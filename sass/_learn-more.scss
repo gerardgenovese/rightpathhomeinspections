@@ -14,16 +14,16 @@
 
 
 
-.homes {
-  grid-column: center-start / center-end;
-  margin: 15rem 0;
+.learn-more {
+  // grid-column: center-start / center-end;
+  margin: 5rem 0;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: 7rem;
 }
 
-.home {
+.inspect {
   background-color: var(--color-gray-light-1);
 
   display: grid;
@@ -66,31 +66,29 @@
       transform: translateY(50%);
   }
 
-  &__location,
-  &__rooms {
-      margin-top: 2.5rem;
-  }
-
-  &__location,
-  &__rooms,
-  &__area,
-  &__price {
-
-      font-size: 1.5rem;
-      margin-left: 2rem;
-
-      display: flex;
-      align-items: center;
-
-      svg {
-          fill: var(--color-primary);
-          height: 2rem;
-          width: 2rem;
-          margin-right: 1rem;
-      }
+  &__location {
+    grid-column: 1/-1;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    text-align:center;
+    display: flex;
+    align-items: center;
   }
 
   &__btn {
-      grid-column: 1 / -1;
+    font-size: 1.2rem;
+    padding: 1rem;
+    grid-column: 1 / -1;
+    transition: .2s;
+    margin-bottom: 3rem;
+    border:none;
+    &:hover {
+      background-color: var(--color-primary);
+      color: var(--color-gray-light-1);
+    }
+    &:focus {
+      outline: 0;
+      box-shadow:none;
+    }
   }
 }
