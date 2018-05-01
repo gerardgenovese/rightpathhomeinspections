@@ -1,7 +1,47 @@
-.side-nav {
+#navbar{
+  background-color: var(--color-gray-dark-1);
+}
+
+.nav-bar-header {
+  height: 5rem;
+  position:relative;
+}
+
+.hamburger__button {
+  position:absolute;
+  top: 15%;
+  right: 2%;;
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.hamburger__button:focus {
+  outline: none;
+}
+
+.hamburger__button-bar-1,
+.hamburger__button-bar-2,
+.hamburger__button-bar-3{
+  width: 100%;
+  height: 0.2rem;
+  background: white;
+  display: block;
+  margin: 0.6rem 0;
+}
+
+/*desktop*/
+.nav-bar__desktop {
+  display: none;
+}
+
+.main-nav {
+  height: 5rem;
   font-size: 1.4rem;
   list-style:none;
-  // margin-top: 3.5rem;
   display:flex;
   justify-content:center;
   margin: 0;
@@ -11,7 +51,7 @@
   position: relative; 
   z-index:1;
   }
-
+  //navbar animations
   &__item:before {
     content: '';
     position:absolute;
@@ -21,7 +61,6 @@
     width: 100%;
     background-color: var(--color-primary-light);
     transform: scaleX(0);
-    // transform-origin: center;
     transition: transform .1s,
                 height .4s cubic-bezier(1,0,0,1) .2s,
                 background-color .2s;
@@ -51,14 +90,84 @@
   }
 }
 
-.legal {
-  font-size: 1.2rem;
-  text-align: center;
-  padding: 2.5rem;
-  color: var(--color-gray-light-4);
-}
-
-
+//active class for navbar background-color
 .active {
   background-color: var(--color-primary);
 }
+
+//Mobile navigation opens/closes on hamburger click
+.mobile {
+  position: fixed;
+  top: 0;
+  background: rgba(90, 90, 90, 0.9);
+  width: 80vw;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /*display: none;*/
+  transform: translateX(-100%);
+  transition: transform 500ms ease-out;
+  z-index: 1000;
+  opacity: 0;
+}
+//mobile navigation link items
+.mobile__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+}
+
+//class for JS to bring .mobile into view
+.open {
+  display: flex;
+  transform: translateX(0);
+}
+
+
+
+
+////////++++++++++++DONT TOUCH BELOW+++++++++++/////////
+//Navbar flip at 768px to hamburger
+@media (min-width: 768px) {
+
+  .hamburger__button {
+      display: none;
+  }
+  .nav-bar__desktop {
+      display: block;
+  }
+}
+//////////===============DONT TOUCH ABOVE=========/////////
+
+
+
+
+
+
+
+
+//Media Query
+@media(max-width:1200px) {
+  .main-nav {
+    font-size: 1rem;
+  }
+}
+@media(max-width:1000px) {
+  .main-nav {
+    font-size: .9rem;
+  }
+  .main-nav__link {
+    padding: 0 2rem;
+  }
+}
+@media(max-width:767px) {
+
+  .mobile-active {
+    background-color: var(--color-primary);
+  }
+}
+

@@ -19,3 +19,34 @@
 $('.carousel').carousel({
   interval: 10000
 })
+
+
+var hamburgerButton = document.querySelector('.hamburger__button');
+var mobileNav = document.querySelector('.mobile');
+
+function openMobile() {
+    mobileNav.classList.add('open');
+    mobileNav.style.opacity = '1';
+}
+
+function closeMobile() {
+    mobileNav.classList.remove('open');
+
+    setTimeout(function(){
+      mobileNav.style.opacity = '0';
+    }, 500);
+   
+}
+
+hamburgerButton.addEventListener('click', openClose)
+
+function openClose() {
+  if (mobileNav.classList.contains('open')) {
+    closeMobile();
+  }else {
+    openMobile();
+  }
+}
+
+
+mobileNav.addEventListener('click', closeMobile);

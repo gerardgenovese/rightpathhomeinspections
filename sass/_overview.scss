@@ -1,66 +1,66 @@
-.overview {
-  display: flex;
-  align-items: center;
-  border-bottom: var(--line);
+// .overview {
+//   display: flex;
+//   align-items: center;
+//   border-bottom: var(--line);
 
-  &__heading {
-    font-size: 2.25rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    padding: 1.5rem 3rem;
-  }
+//   &__heading {
+//     font-size: 2.25rem;
+//     font-weight: 300;
+//     text-transform: uppercase;
+//     letter-spacing: 1px;
+//     padding: 1.5rem 3rem;
+//   }
 
-  &__name{
-      margin-right: auto;
-      display: flex;
-  }
+//   &__name{
+//       margin-right: auto;
+//       display: flex;
+//   }
 
-  &__icons,
-  &__icon-location {
-    width: 1.75rem;
-    height: 1.75rem;
-    fill: var(--color-primary);
-  }
+//   &__icons,
+//   &__icon-location {
+//     width: 1.75rem;
+//     height: 1.75rem;
+//     fill: var(--color-primary);
+//   }
 
-  &__icons-1 {
-    min-width: 25rem !important;
-    font-size: 1.2rem;
-  }
+//   &__icons-1 {
+//     min-width: 25rem !important;
+//     font-size: 1.2rem;
+//   }
 
-  &__learn {
-    font-size: 1.2rem;
-    display: flex;
-    vertical-align: center;
-    align-items:center;
-  }
+//   &__learn {
+//     font-size: 1.2rem;
+//     display: flex;
+//     vertical-align: center;
+//     align-items:center;
+//   }
 
-  &__icon-learn {
-    margin-right: .5rem;
-  }
+//   &__icon-learn {
+//     margin-right: .5rem;
+//   }
 
-  &__cpi {
-    // background-color: var(--color-primary);
-    // color: #fff;
-    margin-left: 3rem;
-    // padding: 0 2.25rem;
-    // align-self: stretch;
+//   &__cpi {
+//     // background-color: var(--color-primary);
+//     // color: #fff;
+//     margin-left: 3rem;
+//     // padding: 0 2.25rem;
+//     // align-self: stretch;
 
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: center;
-  }
+//     // display: flex;
+//     // flex-direction: column;
+//     // align-items: center;
+//     // justify-content: center;
+//   }
 
-  &__cpi-seal img {
-    // font-size: 1.25rem;
-    // font-weight: 300;
-    // margin-bottom: -3px;
-    width: 10rem;
-  }
+//   &__cpi-seal img {
+//     // font-size: 1.25rem;
+//     // font-weight: 300;
+//     // margin-bottom: -3px;
+//     width: 10rem;
+//   }
 
-  // &__rating-count {
-  //   font-size: .8rem;
-  //   text-transform: uppercase;
-  // }
-}
+//   // &__rating-count {
+//   //   font-size: .8rem;
+//   //   text-transform: uppercase;
+//   // }
+// }
