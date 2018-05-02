@@ -46,16 +46,12 @@ Gray dark 3: #999
 */
 .about-container {
   display: grid;
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   @media only screen and (max-width: 62.5em) {
     .about-container {
-      grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
       grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
-  @media only screen and (max-width: 50em) {
-    .about-container {
-      grid-template-rows: 6rem calc(100vh - 6rem); } }
 
-.header {
+.about-header {
   background-color: var(color-gray-dark-1);
   grid-column: full-start / col-end 6;
   background-image: linear-gradient(rgba(24, 43, 65, 0.93), rgba(16, 29, 44, 0.93)), url("../img/inspect-house.jpg");
@@ -69,39 +65,44 @@ Gray dark 3: #999
   grid-row-gap: 1.5rem;
   justify-content: center; }
   @media only screen and (max-width: 50em) {
-    .header {
+    .about-header {
       grid-column: 1 / -1; } }
   @media only screen and (max-width: 37.5em) {
-    .header {
+    .about-header {
       padding: 5rem; } }
-  .header__logo {
+  .about-header-block {
+    content: '';
+    background: radial-gradient(#e9dede, #e6dddd);
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1.8rem 3rem;
+    user-select: none; }
+  .about-header__logo {
     height: 14rem;
     justify-self: center; }
-  .header__btn {
-    align-self: start;
-    justify-self: start; }
-  .header__seenon-text {
+  .about-header__phrase {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     grid-column-gap: 1.5rem;
     align-items: center;
     font-size: 1.6rem;
     color: var(--color-gray-light-2); }
-    .header__seenon-text::before, .header__seenon-text::after {
+    .about-header__phrase::before, .about-header__phrase::after {
       content: "";
       height: 1px;
       display: block;
       background-color: currentColor; }
-  .header__seenon-logos {
+  .about-header__info {
     font-size: 1.5rem;
     color: var(--color-gray-light-1);
     text-align: center; }
-    .header__seenon-logos img {
+    .about-header__info img {
       max-height: 2.5rem;
       max-width: 100%;
       filter: brightness(70%); }
 
-.realtors {
+.about-eddie {
   background-color: var(--color-secondary);
   grid-column: col-start 7 / full-end;
   padding: 3rem;
@@ -111,60 +112,31 @@ Gray dark 3: #999
   justify-items: center;
   grid-row-gap: 2rem; }
   @media only screen and (max-width: 50em) {
-    .realtors {
+    .about-eddie {
       grid-column: 1 / -1; } }
-  .realtors__list {
+  .about-eddie-heading {
+    font-size: 1.6rem;
+    color: var(--color-gray-light-2);
+    text-transform: uppercase; }
+  .about-eddie__list {
     display: grid;
     grid-column-gap: 2rem;
     grid-row-gap: 5vh;
     align-items: start;
     justify-items: center; }
-  .realtors__img {
+  .about-eddie__img {
     width: 25rem;
     border-radius: 50%;
     display: block; }
-  .realtors__sold {
+  .about-eddie__sold {
     text-transform: uppercase;
     color: var(--color-gray-light-2);
     margin-top: -3px;
     text-align: center; }
-
-.eddie__cert {
-  width: 10rem;
-  display: block;
-  margin: 0 auto; }
-
-.heading-4 {
-  font-size: 1.9rem; }
-  .heading-4--light {
-    color: var(--color-gray-light-1); }
-  .heading-4--dark {
-    color: var(--color-gray-dark-1); }
-
-.btn {
-  background-color: var(--color-primary);
-  color: #fff;
-  border: none;
-  border-radius: 0;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  padding: 1.8rem 3rem;
-  cursor: pointer;
-  transition: all .2s; }
-  .btn:hover {
-    background-color: var(--color-primary-dark); }
-
-.mb-sm {
-  margin-bottom: 2rem; }
-
-.mb-md {
-  margin-bottom: 3rem; }
-
-.mb-lg {
-  margin-bottom: 4rem; }
-
-.mb-hg {
-  margin-bottom: 8rem; }
+  .about-eddie__cert {
+    width: 10rem;
+    display: block;
+    margin: 0 auto; }
 
 .company-top {
   display: flex;
@@ -346,7 +318,7 @@ Gray dark 3: #999
   text-align: center;
   width: 70%; }
 
-.heading-4, .heading-1, .heading-2, .heading-3 {
+.heading-1, .heading-2, .heading-3, .heading-4 {
   font-weight: 400; }
 
 .heading-1 {

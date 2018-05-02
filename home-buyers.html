@@ -15,49 +15,52 @@
 </head>
 <body>
 
+<div class="body-container">
+
   <div class="company-top">
-    <header class="header-nav-header">
-      <img src="logo/logo.png" alt="right path home inspections logo" class="logo">
-      <div class="header-nav__icon-box">
-          <div class="header-nav__icon">
-              <i class="fas fa-phone"></i>
-              <span> (917) 574-5403</span>
+    <header class="company-top-header">
+      <div class="testlogo">
+        <img src="logo/logo.png" class="company-top-logo" alt="right path home inspections logo" >
+      </div>
+
+      <section class="company-top company-icons">
+        <div class="company-top__icon-box">
+          <div class="company-top__icon icon-phone">
+            <i class="fas fa-phone"></i>
+            <span> (917) 574-5403</span>
           </div> 
         </div>
-        <div class="header-nav__icon-box">
-          <div class="header-nav__icon">
-              <i class="fas fa-envelope"> edrodriguez@rightpathinspections.com</i>
+        <div class="company-top__icon-box">
+          <div class="company-top__icon">
+            <i class="fas fa-envelope"> edrodriguez@rightpathinspections.com</i>
           </div> 
         </div>
-      <nav class="header-nav">
-        <div class="header-nav__icon-box">
-          <div class="header-nav__icon">
-              <i class="fab fa-facebook-f footer-social"></i>
-          </div> 
+        <div class="company-top__icon-box">
+          <a href="#" class="company-top__icon">
+            <i class="fab fa-facebook-f footer-social"></i>
+          </a> 
         </div>
-        <div class="header-nav__icon-box">
-          <div class="header-nav__icon">
-              <i class="fab fa-instagram footer-social"></i>
-          </div> 
+        <div class="company-top__icon-box">
+          <a href="#" class="company-top__icon">
+            <i class="fab fa-instagram footer-social"></i>
+          </a> 
         </div>
-        <div class="header-nav__icon-box">
-          <div class="header-nav__icon">
+        <div class="company-top__icon-box">
+          <a href="#" class="company-top__icon">
               <i class="fab fa-youtube footer-social"></i>
-          </div> 
+          </a> 
         </div>
-        <div class="header-nav__icon-box">
-          <div class="header-nav__icon">
+        <div class="company-top__icon-box">
+          <a href="#" class="company-top__icon">
               <i class="fab fa-twitter footer-social"></i>
-          </div> 
+          </a> 
         </div>
-      </nav>
+      </section>
     </header>
-  </div>
+  </div> <!--company-top end-->
 
-
-
-  <nav id="main-nav">
-    <header class="header">
+  <nav id="navbar">
+    <header class="nav-bar-header">
       <nav class="hamburger">     
         <div class="hamburger__button">
           <div class="hamburger__button-bar-1"></div>
@@ -65,14 +68,14 @@
           <div class="hamburger__button-bar-3"></div>
         </div>
       </nav>
-      <nav class="desktop">
+      <nav class="nav-bar__desktop">
           <ul class="main-nav">
-            <li class="main-nav__item active">
+            <li class="main-nav__item">
               <a href="index.html" class="main-nav__link">
                 <div class="main-nav__icon">
                     <i class="fas fa-search"></i>
                 </div>
-                <span>Our Mission</span>
+                <span class="testing">Our Mission</span>
               </a>
             </li>
             <li class="main-nav__item">
@@ -83,7 +86,7 @@
                 <span>About Us</span>
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item active">
               <a href="home-buyers.html" class="main-nav__link">
                 <div class="main-nav__icon">
                     <i class="fas fa-hand-holding-usd"></i>
@@ -118,7 +121,7 @@
             <li class="main-nav__item">
               <a href="realtors.html" class="main-nav__link">
                 <div class="main-nav__icon">
-                  <i class="far fa-handshake"></i>
+                    <i class="fas fa-share-square"></i>
                 </div>
                 <span>Contact Us</span>
               </a>
@@ -126,67 +129,69 @@
           </ul> 
       </nav>
     </header>
+
     <nav class="mobile">
       <ul class="mobile__items">
-        <li class="main-nav__item mobile-active">
-          <a href="index.html" class="main-nav__link">
-            <div class="main-nav__icon">
-                <i class="fas fa-users"></i>
-            </div>
-            <span>Our Mission</span>
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a href="about.html" class="main-nav__link">
-            <div class="main-nav__icon">
-                <i class="fas fa-users"></i>
-            </div>
-            <span>About Us</span>
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a href="home-buyers.html" class="main-nav__link">
-            <div class="main-nav__icon">
-                <i class="fas fa-hand-holding-usd"></i>
-            </div>
-            <span>Home Buyers</span>
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a href="home-sellers.html" class="main-nav__link">
-            <div class="main-nav__icon">
-                <i class="fas fa-donate"></i>
-            </div>
-            <span>Home Sellers</span>
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a href="construction.html" class="main-nav__link">
-            <div class="main-nav__icon">
-              <i class="fas fa-industry"></i>
-            </div>
-            <span>New Construction</span>
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a href="realtors.html" class="main-nav__link">
-            <div class="main-nav__icon">
-              <i class="far fa-handshake"></i>
-            </div>
-            <span>Realtors</span>
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a href="realtors.html" class="main-nav__link">
-            <div class="main-nav__icon">
-              <i class="far fa-handshake"></i>
-            </div>
-            <span>Contact Us</span>
-          </a>
-        </li>
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__link">
+              <div class="main-nav__icon">
+                  <i class="fas fa-users"></i>
+              </div>
+              <span>Our Mission</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="about.html" class="main-nav__link">
+              <div class="main-nav__icon">
+                  <i class="fas fa-users"></i>
+              </div>
+              <span>About Us</span>
+            </a>
+          </li>
+          <li class="main-nav__item  mobile-active">
+            <a href="home-buyers.html" class="main-nav__link">
+              <div class="main-nav__icon">
+                  <i class="fas fa-hand-holding-usd"></i>
+              </div>
+              <span>Home Buyers</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="home-sellers.html" class="main-nav__link">
+              <div class="main-nav__icon">
+                  <i class="fas fa-donate"></i>
+              </div>
+              <span>Home Sellers</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="construction.html" class="main-nav__link">
+              <div class="main-nav__icon">
+                <i class="fas fa-industry"></i>
+              </div>
+              <span>New Construction</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="realtors.html" class="main-nav__link">
+              <div class="main-nav__icon">
+                <i class="far fa-handshake"></i>
+              </div>
+              <span>Realtors</span>
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="realtors.html" class="main-nav__link">
+              <div class="main-nav__icon">
+                  <i class="fas fa-share-square"></i>
+              </div>
+              <span>Contact Us</span>
+            </a>
+          </li>
       </ul>
     </nav>
-  </nav>
+  </nav><!--main-nav end-->
+          
 
       <div id="buyers">
         <div class="buyers__pictures">
@@ -205,8 +210,7 @@
       </div>
 
 
-    </div>
-  </div>
+
 
   <footer id="footer">
     <ul class="footer">
@@ -223,7 +227,7 @@
   </footer>
   
 
-
+</div><!--body-container end-->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
