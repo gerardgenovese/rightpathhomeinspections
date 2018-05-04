@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Right Path Home Inspections</title>
-  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet"> -->
+
   <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Tajawal|Open++Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -110,7 +110,7 @@
                   <span>New Construction</span>
                 </a>
               </li>
-              <li class="main-nav__item active">
+              <li class="main-nav__item">
                 <a href="realtors.html" class="main-nav__link">
                   <div class="main-nav__icon">
                     <i class="far fa-handshake"></i>
@@ -118,7 +118,7 @@
                   <span>Realtors</span>
                 </a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item active">
                 <a href="contact.html" class="main-nav__link">
                   <div class="main-nav__icon">
                       <i class="fas fa-share-square"></i>
@@ -172,7 +172,7 @@
                 <span>New Construction</span>
               </a>
             </li>
-            <li class="main-nav__item mobile-active">
+            <li class="main-nav__item">
               <a href="realtors.html" class="main-nav__link">
                 <div class="main-nav__icon">
                   <i class="far fa-handshake"></i>
@@ -180,7 +180,7 @@
                 <span>Realtors</span>
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item mobile-active">
               <a href="contact.html" class="main-nav__link">
                 <div class="main-nav__icon">
                     <i class="fas fa-share-square"></i>
@@ -191,58 +191,51 @@
         </ul>
       </nav>
     </nav><!--main-nav end-->
-
-      <main class="main-container">
-        <div class="realtor-header"></div>
-        <div id="realtor-info">
-          <div class="realtor-description">
-            <h2 class="realtor-header-heading heading-2">
-            Working Among Professionals
-            </h2>
-            <hr class="realtor-hr">
-            <p class="paragraph">
-              It is important when choosing a home inspector to refer to your clients, to consider the caliber of professionalism that is also being referred along with that inspection.  You would like your clients to receive treatments before, during, and after their inspection as an extension of the professionalism and courtesy shown by you during their home purchase process.  Choose Right Path Home Inspections as your preferred inspection referral source and together we can make the home purchase process as quick and seamless as possible.  
-            </p>
-            <div class="realtor-logo">
-              <img src="img/cpi-internachi-logo.png" alt="cpi-internachi-logo" class="realtor-logo__logo">
+    
+  <section id="contact-form">
+    <div class="container-fluid contact-image">
+      <div class="row">
+        <div class="col-lg-12 col-sm-12 contact-background">
+            <div class="contact-header"></div>
+            <h2 class="text-center mt-5 heading-2">Contact Us</h2>
+           
+            <!-- <div class="social-bottom">
+              <i class="fas fa-phone"> (917) 574-5403</i>
+              <i class="fas fa-envelope"> edrodriguez@rightpathinspections.com</i> 
+              <a href="https://www.facebook.com/proformconstructionllc" class="link-tag" target="_blank">  <i class="fab fa-facebook-f footer-social"></i></a>
+              <a href="https://www.instagram.com/proform_construction/" class="link-tag" target="_blank"><i class="fab fa-instagram footer-social"></i></a>
+              <a href="https://www.youtube.com/channel/UCYfWUdBLZpKs5XWdRqCl0Pg?view_as=subscriber" class="link-tag" target="_blank"> <i class="fab fa-youtube footer-social"></i></a>  
+              <a href="https://www.youtube.com/channel/UCYfWUdBLZpKs5XWdRqCl0Pg?view_as=subscriber" class="link-tag" target="_blank">  <i class="fab fa-twitter footer-social"></i></a>  
+            </div> -->
+          <div class="alert">Your message has been sent</div>
+          <form id="contactForm">
+            <div class="form-group">
+                <label for="name"></label>
+                <input type="text" id="name" class="form-control form-control-lg" placeholder="Name" required>
             </div>
-            <a href="contact.html" class="btn-btn">
-              <span class="btn-btn__visible">Contact Us Now</span>
-              <span class="btn-btn__invisible">Lets work together</span>
-            </a>
-          </div> <!--realtor description-->
-        </div><!--realtor info-->
-      </div><!--main container-->
+            <div class="form-group">
+                <label for="email"></label>
+                <input type="email" id="email" class="form-control form-control-lg" placeholder="Enter Email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone"></label>
+                <input type="text" id="phone" class="form-control form-control-lg" placeholder="Enter Phone Number">
+            </div>
+            <div class="form-group">
+                <label for="message"></label>
+                <textarea name="message" id="message" class="form-control form-control-lg" placeholder="Enter Message" cols="30" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-lg btn-primary btn-block d-block contact-button" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer id="footer">
+  <footer id="footer">
     <ul class="footer">
       <li class="footer__item"><a href="index.html" class="footer__link">Our Mission</a></li>
       <li class="footer__item"><a href="about.html" class="footer__link">Learn About Us</a></li>
@@ -257,7 +250,12 @@
     </p>
   </footer>
 
-</div> <!--body container end-->
+</div> <!--body-container end-->
+
+
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

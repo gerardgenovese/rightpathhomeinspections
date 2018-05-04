@@ -4,6 +4,10 @@
   padding: 4.5rem;
   background-color: var(--color-gray-light-1);
   border-bottom: var(--line);
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.3rem;
+  }
 }
 
 //main body text
@@ -27,10 +31,10 @@
 
 //main body list items
 .list {
-  margin-top: 3rem;
+  margin-top: 1rem;
 
-  &-item {
-    margin-left: 2rem;
+  &-header {
+    margin-bottom: 1rem;
   }
 }
 
@@ -54,6 +58,30 @@
   }
 }
 
+//what we do
+.check-list__list {
+  display:grid;
+  grid-template-columns: max-content(3,1fr);
+  // justify-items:center;
+  margin-left: 1rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1rem;
+  }
+  @media only screen and (max-width: 350px) {
+    font-size: .8rem;
+  }
+}
+.one {
+  grid-column:1/2;
+}
+.two {
+  grid-column:2/3;
+}
+.three {
+  grid-column:3/4;
+}
+ 
 
 
 ////////////////////////////////////////
@@ -126,6 +154,8 @@
   }
 }
 
+ 
+
 //Discount Prices section
 
 .discount-container{
@@ -150,64 +180,8 @@
   }
 }
 
-// discount button
-.btn-btn {
-  font-size: 1.5rem;
-  font-weight: 300;
-  text-transform: uppercase;
-  border-radius: 100px;
-  border: none;
-  background-color: var(--color-primary);
-  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  transition: .2s;
 
-  & > * {
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    transition: all .2s;
-  }
 
-  &__visible {
-    padding: 2rem 7.5rem;
-  }
-
-  &__invisible {
-    position: absolute;
-    padding: 2rem 0;
-    left: 0;
-    top: -100%;
-  }
-
-  &:hover {
-    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
-    transform:scale(1.01);
-    box-shadow: 0 5px 5px rgba(80, 77, 77, 0.404);
-  }
-
-  &:hover &__visible {
-    transform: translateY(100%);
-  }
-
-  &:hover &__invisible {
-    top: 0;
-  }
-
-  &:focus {
-    outline: none;
-  }
-  &:active {
-    outline: none;
-    transform:scale(1);
-    box-shadow: none;
-
-    transition: .2s;
-    }
-}
 
 
 //imgage/info section to learn more
@@ -277,9 +251,13 @@
     transition: .2s;
     margin-bottom: 3rem;
     border:none;
+    background-color: var(--color-primary-light);
+    color: var(--color-gray-light-1);
+    transition: .2s;
+
     &:hover {
-      background-color: var(--color-primary);
-      color: var(--color-gray-light-1);
+    background-color: var(--color-primary-dark);
+    color: var(--color-gray-light-1);
     }
     &:focus {
       outline: 0;
@@ -302,6 +280,9 @@
     margin-top: 2rem;
   }
 }
+
+
+
 @media(max-width: 500px) {
   #our-mission {
    padding: 0;
@@ -310,3 +291,4 @@
     flex: 0 0 100%;
   }
 }
+

@@ -46,6 +46,10 @@
     animation-iteration-count: 1;
     background-repeat: no-repeat;  
   }
+  @media only screen and (max-width: $bp-small) {
+    background-position: -200px 0 !important;
+    }
+
 }
 .carousel-caption{
   background-color:rgba(10, 10, 10, 0.705);
@@ -54,6 +58,11 @@
   position:absolute;
   top: 30%;
   left: 10%;
+
+  @media screen and (max-width:$bp-small) {
+    left: 0;
+    width: 100%;
+  }
 }
 .carousel-header{
   font-size:2.5rem;

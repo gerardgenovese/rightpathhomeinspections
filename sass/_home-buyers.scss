@@ -16,10 +16,10 @@
       grid-template-columns: repeat(6, 1fr);
       align-items: center;
 
-      // @media only screen and (max-width: $bp-medium) {
-      //     grid-column: 1 / -1;
-      //     padding: 6rem;
-      // }
+      @media only screen and (max-width: $bp-medium) {
+          grid-column: 1 / -1;
+          padding: 6rem;
+      }
   }
 
   &__img--1 {
@@ -28,10 +28,10 @@
       grid-column: 2 / 6;
       box-shadow: 0 2rem 5rem rgba(#000, .1);
 
-      // @media only screen and (max-width: $bp-medium) {
-      //     grid-column: 1 / 5;
-      //     grid-row: 1 / -1;
-      // }
+      @media only screen and (max-width: $bp-medium) {
+          grid-column: 1 / 5;
+          grid-row: 1 / -1;
+      }
   }
 
   &__img--2 {
@@ -41,10 +41,10 @@
       z-index: 20;
       box-shadow: 0 2rem 5rem rgba(#000, .2);
 
-      // @media only screen and (max-width: $bp-medium) {
-      //     grid-row: 1 / -1;
-      //     width: 100%;
-      // }
+      @media only screen and (max-width: $bp-medium) {
+          grid-row: 1 / -1;
+          width: 100%;
+      }
   }
 
   &__content {
@@ -57,10 +57,10 @@
       align-content: center;
       justify-items: start;
 
-      // @media only screen and (max-width: $bp-medium) {
-      //     grid-column: 1 / -1;
-      //     grid-row: 5 / 6;
-      // }
+      @media only screen and (max-width: $bp-medium) {
+          grid-column: 1 / -1;
+          grid-row: 5 / 6;
+      }
       
   }
 
@@ -68,22 +68,12 @@
       font-size: 1.5rem;
       font-style: italic;
       margin-bottom: 4rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        font-size: 1.3rem;
+      }
   }
 }
 
-.btn__home-buyers {
-  padding: 1rem;
-  font-size:1.2rem;
-  width: 20rem;
-  border:none;
 
-  &:hover {
-    background-color: var(--color-primary);
-    color: var(--color-gray-light-1);
-  }
 
-  &:focus {
-    outline: 0 !important;
-    box-shadow:none;
-  }
-}

@@ -1,0 +1,97 @@
+
+//OUR MISSION
+.btn-btn {
+  width: 30rem;
+  height: 7rem;
+  display: block;
+  margin: 0 auto;
+
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 100px;
+  border: none;
+  background-color: var(--color-primary);
+  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: .2s;
+  text-align:center;
+
+  & > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all .2s;
+  }
+
+  &__visible {
+    padding: 2rem 7.5rem;
+  }
+
+  &__invisible {
+    position: absolute;
+    padding: 2rem 0;
+    left: 0;
+    top: -100%;
+  }
+
+  &:hover {
+    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+    transform:scale(1.01);
+    box-shadow: 0 5px 5px rgba(80, 77, 77, 0.404);
+    color: var(--color-gray-light-1);
+    text-align: center;
+  }
+
+  &:hover &__visible {
+    transform: translateY(100%);
+  }
+
+  &:hover &__invisible {
+    top: 0;
+  }
+
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    outline: none;
+    transform:scale(1);
+    box-shadow: none;
+
+    transition: .2s;
+    }
+}
+
+// .btn-realtor {
+//   display:block;
+//   margin: 0 auto;
+//   margin-top: 5rem;
+// }
+
+///////HOME BUYERS/////
+.btn__home-buyers {
+  display:block;
+  text-align:center;
+  padding: 1rem;
+  font-size:1.2rem;
+  width: 20rem;
+  border:none;
+  background-color: var(--color-primary-light);
+  color: var(--color-gray-light-1);
+  transition: .2s;
+  cursor:pointer;
+
+  &:hover {
+    background-color: var(--color-primary-dark);
+    color: var(--color-gray-light-1);
+    text-decoration:none;
+  }
+  &:focus {
+    outline: 0 !important;
+    box-shadow:none;
+  }
+}
