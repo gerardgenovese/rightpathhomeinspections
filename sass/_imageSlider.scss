@@ -46,7 +46,7 @@
     animation-iteration-count: 1;
     background-repeat: no-repeat;  
   }
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: 415px) {
     background-position: -200px 0 !important;
     }
 
