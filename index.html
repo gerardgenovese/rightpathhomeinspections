@@ -35,26 +35,18 @@
             <i class="fas fa-envelope"> edrodriguez@rightpathinspections.com</i>
           </div> 
         </div>
-        <div class="company-top__icon-box">
-          <a href="#" class="company-top__icon">
-            <i class="fab fa-facebook-f footer-social"></i>
-          </a> 
-        </div>
-        <div class="company-top__icon-box">
-          <a href="#" class="company-top__icon">
-            <i class="fab fa-instagram footer-social"></i>
-          </a> 
-        </div>
-        <div class="company-top__icon-box">
-          <a href="#" class="company-top__icon">
-              <i class="fab fa-youtube footer-social"></i>
-          </a> 
-        </div>
-        <div class="company-top__icon-box">
-          <a href="#" class="company-top__icon">
-              <i class="fab fa-twitter footer-social"></i>
-          </a> 
-        </div>
+        <a href="https://www.facebook.com/Right-Path-Home-Inspections-LLC-2000843136846826/" class="company-top__icon company-top__icon-box" target="_blank">
+          <i class="fab fa-facebook-f footer-social"></i>
+        </a>
+        <a href="https://www.instagram.com/rightpathhomeinspections/" class="company-top__icon company-top__icon-box" target="_blank">
+          <i class="fab fa-instagram footer-social"></i>
+        </a> 
+        <a href="https://www.youtube.com/channel/UCz6G_gnZNVDNpmlKNH0_LbA?view_as=subscriber" class="company-top__icon company-top__icon-box" target="_blank">
+          <i class="fab fa-youtube footer-social"></i>
+        </a> 
+        <a href="https://twitter.com/RightPathInspec" class="company-top__icon company-top__icon-box" target="_blank">
+          <i class="fab fa-twitter footer-social"></i>
+        </a> 
       </section>
     </header>
   </div> <!--company-top end-->
@@ -237,7 +229,7 @@
         With technology today, many Home Inspectors send you off with computerized images of your problems and leave you wondering about the key details. At Right Path Home Inspections, we have one-on-one sit downs with our clients going over all the key details to ensure you're knowledgable of all issues that are present and ones that may occur in the future. 
       </p>
       <p>
-        With years of professional trade experience, let us educate you and help you decide the right path to take. Contact Right Path Home Inspectors and get a free consulation today.
+        With years of professional trade experience, let us educate you and help you decide the right path to take. Contact Right Path Home Inspections and get a free consulation today.
       </p>
 
       <div class="list">
@@ -250,7 +242,7 @@
           <li class="list-item">Ventilation</li>
           <li class="list-item">HVAC Equipment</li>
           <li class="list-item">Foundation</li>
-          <li class="list-item">Testing for Wood-<br>Destroying Organims</li>
+          <li class="list-item">Testing for Wood-<br>Destroying Organisms</li>
         </div>
         <div class="two">
           <li class="list-item">Crawlspace</li>
@@ -267,7 +259,7 @@
           <li class="list-item">Basement</li>
           <li class="list-item">Radon Gas Test</li>
           <li class="list-item">Radon Water Testing</li>
-          <li class="list-item">Basic Water Profile, <br> Testing for all Welss</li>
+          <li class="list-item">Basic Water Profile, <br> Testing for all Wells</li>
         </div>
       </ul>
     </div>
@@ -345,7 +337,7 @@
       <div class="inspect-desc">
         <p>We assess all structural issues with the property and will include problems that may arise in the foreeseable future.</p>
       </div>
-      <button class="btn inspect__btn">Learn More</button>
+      <button class="btn inspect__btn" data-toggle="modal" data-target="#structure">Learn More</button>
     </div>
     <div class="inspect">
       <img src="img/eddie-breakerbox.jpg" alt="House 1" class="inspect__img">
@@ -358,7 +350,7 @@
       <div class="inspect-desc">
         <p>Electrical panel inspections involve more than just a quick observation. All wires must be examined thoroughly and properly connected. </p>
       </div>
-      <button class="btn inspect__btn">Learn More</button>
+      <button class="btn inspect__btn" data-toggle="modal" data-target="#electric">Learn More</button>
     </div>
     <div class="inspect">
       <img src="img/eddie-drain.jpg" alt="House 1" class="inspect__img">
@@ -371,13 +363,68 @@
       <div class="inspect-desc">
         <p>Take the necessary precausions to avoid flooding and water damage. Proper drainage is vital in order to keep water damage to the property at bay.</p>
       </div>
-      <button class="inspect__btn">Learn More</button>
+      <button class="btn inspect__btn" data-toggle="modal" data-target="#gutters">Learn More</button>
     </div>  
   </section><!--inpsect end-->
       
   <video width="100%" controls>
     <source src="img/client.mp4">
   </video>
+
+
+ <!-- MODAL -->
+ <div class="modal" id="structure">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Structural & Foundation Issues</h5>
+        <button class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        Some of the biggest concerns with new home owners is the structure and foundation of the home they are purchasing. Almost every house has a foundational "settling" of some kind and most strutures have minor hairline cracks. Many of these issues are not a concern but some may indicate a more serious problem. Hiring a professional who knows the difference is vital to ensure you are moving into a safe and secure home.  
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary modal-close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- MODAL -->
+ <div class="modal" id="electric">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Electrical Issues</h5>
+        <button class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+       Old wiring is a huge fire hazard and many homes build before the 1960's have outdated electrical systems that don't meet today's code and standards. In many cases home buyers are lead to believe their electrical systems are fine, only to find out later that they have to knock down and open up walls in order to replace the outdated electrical systems. It's an extremely expensive project which is why your home inspector should be able to give you all the information necessary before you move forward with the purchase of a home that may have electrical issues. 
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary modal-close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- MODAL -->
+ <div class="modal" id="gutters">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Water Damage</h5>
+        <button class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        Small water stains on the ceiling, gutters flooding outside areas near the home. The roof may be leaking and the basement may be flooding. Water is and will continue to infiltrate the home and knowing where the source is coming from is extremely important. A simple water stain in the basement could be originating from the roof and most home inspectors miss these key details. There can be no second guessing when it comes to the safety of your home. This is why it's important to hire professionals who can spot these key details. 
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary modal-close" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 
